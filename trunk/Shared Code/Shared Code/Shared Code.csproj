@@ -37,10 +37,119 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\ArrayAdditions.cs" />
+    <Compile Include="Additions\BoundsAdditions.cs" />
+    <Compile Include="AdvancedInspector\Attributes\AdvancedInspector.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Angle.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Background.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Bypass.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Collection.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Constructor.cs" />
+    <Compile Include="AdvancedInspector\Attributes\CreateDerived.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Descriptor.cs" />
+    <Compile Include="AdvancedInspector\Attributes\DisplayAsParent.cs" />
+    <Compile Include="AdvancedInspector\Attributes\DontAllowSceneObject.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Enum.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Expandable.cs" />
+    <Compile Include="AdvancedInspector\Attributes\FieldEditor.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Group.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Help.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Inspect.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Method.cs" />
+    <Compile Include="AdvancedInspector\Attributes\NoPicker.cs" />
+    <Compile Include="AdvancedInspector\Attributes\RangeValue.cs" />
+    <Compile Include="AdvancedInspector\Attributes\ReadOnly.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Restrict.cs" />
+    <Compile Include="AdvancedInspector\Attributes\RuntimeResolve.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Space.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Style.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Tab.cs" />
+    <Compile Include="AdvancedInspector\Attributes\TextField.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Title.cs" />
+    <Compile Include="AdvancedInspector\Attributes\Toolbar.cs" />
+    <Compile Include="AdvancedInspector\Core\ActionBinding.cs" />
+    <Compile Include="AdvancedInspector\Core\ComponentMonoBehaviour.cs" />
+    <Compile Include="AdvancedInspector\Core\RangeFloat.cs" />
+    <Compile Include="AdvancedInspector\Core\RangeInt.cs" />
+    <Compile Include="AdvancedInspector\Core\UDictionary.cs" />
+    <Compile Include="AdvancedInspector\Event\EventHandlers.cs" />
+    <Compile Include="AdvancedInspector\Interface\ICopiable.cs" />
+    <Compile Include="AdvancedInspector\Interface\ICopy.cs" />
+    <Compile Include="AdvancedInspector\Interface\IDataChanged.cs" />
+    <Compile Include="AdvancedInspector\Interface\IInspectorRunning.cs" />
+    <Compile Include="AdvancedInspector\Interface\IListAttribute.cs" />
+    <Compile Include="AdvancedInspector\Interface\IPreview.cs" />
+    <Compile Include="AdvancedInspector\Interface\IRuntimeAttribute.cs" />
+    <Compile Include="AdvancedInspector\Utility\TypeUtility.cs" />
+    <Compile Include="Behaviours\CameraBillboard.cs" />
+    <Compile Include="ShinobiTools\ShinobiMono\SGameTime.cs" />
+    <Compile Include="ShinobiTools\ShinobiMono\ShinobiMono.cs" />
+    <Compile Include="ShinobiTools\ShinobiMono\SMonoton.cs" />
+    <Compile Include="ShinobiTools\ShinobiMono\STimerData.cs" />
+    <Compile Include="Types\CardinalDirection.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Additions\ColorAdditions.cs" />
+    <Compile Include="Behaviours\ContinuousRotate.cs" />
+    <Compile Include="Types\CountedSet.cs" />
+    <Compile Include="Behaviours\CreateBillboard.cs" />
+    <Compile Include="Behaviours\DisableColliderAtStart.cs" />
+    <Compile Include="Behaviours\DisableOnQuality.cs" />
+    <Compile Include="Behaviours\DoNotDestroyOnLoad.cs" />
+    <Compile Include="Additions\DoubleAdditions.cs" />
+    <Compile Include="Utility\DrawArrow.cs" />
+    <Compile Include="Behaviours\DrawBoundsGizmo.cs" />
+    <Compile Include="Additions\EnumAdditions.cs" />
+    <Compile Include="Utility\EnumTryParse.cs" />
+    <Compile Include="Additions\FloatAdditions.cs" />
+    <Compile Include="FlowLayoutGroup.cs" />
+    <Compile Include="Behaviours\FPSCounter.cs" />
+    <Compile Include="Additions\GameObjectAdditions.cs" />
+    <Compile Include="Additions\IDictionaryAdditions.cs" />
+    <Compile Include="Additions\IEnumerableAdditions.cs" />
+    <Compile Include="Additions\IListAdditions.cs" />
+    <Compile Include="Behaviours\InstanceTracked.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="Additions\LineRendererAdditions.cs" />
+    <Compile Include="Additions\ListAdditions.cs" />
+    <Compile Include="Behaviours\LookAtObject.cs" />
+    <Compile Include="Behaviours\MatchObjectPosition.cs" />
+    <Compile Include="Additions\MaterialAdditions.cs" />
+    <Compile Include="Additions\MathAdditions.cs" />
+    <Compile Include="Additions\MeshAdditions.cs" />
+    <Compile Include="Additions\MonoBehaviourAdditions.cs" />
+    <Compile Include="Utility\MoveUnityWindow.cs" />
+    <Compile Include="Types\NamedShadesOfGrey.cs" />
+    <Compile Include="Additions\ObjectAdditions.cs" />
+    <Compile Include="Behaviours\OLMonoBehaviour.cs" />
+    <Compile Include="Utility\PlayerPrefsX.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomRotate.cs" />
+    <Compile Include="Additions\RendererAdditions.cs" />
+    <Compile Include="Additions\RigidbodyAdditions.cs" />
+    <Compile Include="SerializableDictionary.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="SimpleVelocityLimiter.cs" />
+    <Compile Include="Additions\StringAddtions.cs" />
+    <Compile Include="Additions\StringDebugAdditions.cs" />
+    <Compile Include="Additions\TransformAdditions.cs" />
+    <Compile Include="Additions\Vector2Additions.cs" />
+    <Compile Include="Additions\Vector3Additions.cs" />
+    <Compile Include="Additions\Vector4Additions.cs" />
+    <Compile Include="VelocityLimiter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ShinobiTools\ShinobiMono\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
