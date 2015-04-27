@@ -33,7 +33,7 @@ using System.Text;
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace OmniLibrary {
+namespace SharedCode {
 		
 	public class JSON {
 		

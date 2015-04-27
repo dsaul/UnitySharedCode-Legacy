@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Runtime.InteropServices;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public static class MathAdditions
 	{

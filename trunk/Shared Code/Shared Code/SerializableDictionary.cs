@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 using System.Collections.Generic;
 using System.Text;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	[Serializable()]
 	public class SerializableDictionary<TKey, TVal> : Dictionary<TKey, TVal>, IXmlSerializable, ISerializable

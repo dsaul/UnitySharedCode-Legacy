@@ -2,7 +2,7 @@
 using System;
 using System.Collections;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public static class GameObjectAdditions
 	{

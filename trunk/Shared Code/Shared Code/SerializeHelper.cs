@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Text;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public static class SerializeHelper
 	{

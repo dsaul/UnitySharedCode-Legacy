@@ -6,7 +6,7 @@ using System.Threading;
  
 //http://geekswithblogs.net/mnf/archive/2006/07/13/84942.aspx
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	//using Microsoft.VisualBasic;
 	using System;

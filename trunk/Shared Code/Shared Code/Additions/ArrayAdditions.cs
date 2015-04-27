@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public static class ArrayAdditions
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	/* 
 Make a billboard out of an object in the scene 

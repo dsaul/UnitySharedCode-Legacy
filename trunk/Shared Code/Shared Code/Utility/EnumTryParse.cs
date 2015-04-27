@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public static class EnumTryParse
 	{

@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public static class Vector3Additions
 	{

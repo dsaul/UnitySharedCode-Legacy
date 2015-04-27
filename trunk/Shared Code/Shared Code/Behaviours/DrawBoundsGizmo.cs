@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	[RequireComponent(typeof(MeshRenderer))]
 	public class DrawBoundsGizmo : MonoBehaviour

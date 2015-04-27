@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ShinobiTools;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	public abstract class OLMonoBehaviour : ShinobiMono
 	{

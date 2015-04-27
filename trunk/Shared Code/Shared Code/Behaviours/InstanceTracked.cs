@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 //using AdvancedInspector;
 
-namespace OmniLibrary
+namespace SharedCode
 {
 	//[AdvancedInspector]
 	public class InstanceTracked<T> : OLMonoBehaviour where T : InstanceTracked<T>
