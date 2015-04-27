@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Shared_Code</RootNamespace>
     <AssemblyName>Shared Code</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,7 +99,6 @@
     <Compile Include="ShinobiTools\ShinobiMono\SMonoton.cs" />
     <Compile Include="ShinobiTools\ShinobiMono\STimerData.cs" />
     <Compile Include="Types\CardinalDirection.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Additions\ColorAdditions.cs" />
     <Compile Include="Behaviours\ContinuousRotate.cs" />
     <Compile Include="Types\CountedSet.cs" />
