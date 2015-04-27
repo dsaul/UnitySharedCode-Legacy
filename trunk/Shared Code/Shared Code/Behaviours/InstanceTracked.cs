@@ -134,7 +134,7 @@ namespace SharedCode
 		//[Inspect]
 		string m_UniqueName = "";
 
-		public string UniqueName
+		public virtual string UniqueName
 		{
 			get { return m_UniqueName; }
 			set { m_UniqueName = value; }
