@@ -2,11 +2,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using AdvancedInspector;
+//using AdvancedInspector;
 
 namespace OmniLibrary
 {
-	[AdvancedInspector]
+	//[AdvancedInspector]
 	public class InstanceTracked<T> : OLMonoBehaviour where T : InstanceTracked<T>
 	{
 		static List<T> c_Instances = null;
@@ -131,7 +131,7 @@ namespace OmniLibrary
 			OnInstanceRemoved((T)this);
 		}
 		
-		[Inspect]
+		//[Inspect]
 		public string UniqueName = "";
 
 

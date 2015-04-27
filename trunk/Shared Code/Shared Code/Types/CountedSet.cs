@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using AdvancedInspector;
+//using AdvancedInspector;
 
 namespace OmniLibrary
 {
-	[AdvancedInspector]
+	//[AdvancedInspector]
 	public class CountedSet<T>
 	{
-		[Inspect]
+		//[Inspect]
 		Dictionary<T, int> m_Members = new Dictionary<T, int>();
 
 		public CountedSet() { }
@@ -43,13 +43,13 @@ namespace OmniLibrary
 				m_Members[obj] = count;
 		}
 
-		[Inspect]
+		//[Inspect]
 		public int UniqueCount
 		{
 			get { return m_Members.Count; }
 		}
 
-		[Inspect]
+		//[Inspect]
 		public int NonUniqueCount
 		{
 			get
