@@ -132,6 +132,7 @@ namespace SharedCode
 		}
 		
 		//[Inspect]
+		[SerializeField]
 		string m_UniqueName = "";
 
 		public virtual string UniqueName
