@@ -118,9 +118,9 @@ namespace SharedCode
 		protected override void OnEnable()
 		{
 			base.OnEnable();
-			if (string.IsNullOrEmpty(UniqueName))
+			if (string.IsNullOrEmpty(m_UniqueName))
 			{
-				UniqueName = System.Guid.NewGuid().ToString();
+				m_UniqueName = System.Guid.NewGuid().ToString();
 			}
 			OnInstanceAdded((T)this);
 		}
@@ -132,7 +132,13 @@ namespace SharedCode
 		}
 		
 		//[Inspect]
-		public string UniqueName = "";
+		string m_UniqueName = "";
+
+		public string UniqueName
+		{
+			get { return m_UniqueName; }
+			set { m_UniqueName = value; }
+		}
 
 
 	}
