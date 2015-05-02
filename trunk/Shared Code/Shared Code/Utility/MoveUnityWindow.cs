@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Runtime.InteropServices;
 
-namespace SharedCode
+namespace SharedCode.Utility
 {
 	public static class MoveUnityWindow
 	{

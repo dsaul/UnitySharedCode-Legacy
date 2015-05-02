@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace SharedCode
+namespace SharedCode.Utility
 {
 	public static class DrawArrow
 	{

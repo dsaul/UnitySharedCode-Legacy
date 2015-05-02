@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-namespace SharedCode
+namespace SharedCode.Utility
 {
 	public static class EnumTryParse
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace SharedCode
+namespace SharedCode.Types
 {
 	public enum CardinalDirection {
 		Unknown = 0,

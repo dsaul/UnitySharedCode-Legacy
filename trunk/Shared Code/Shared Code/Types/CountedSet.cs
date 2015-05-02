@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 //using AdvancedInspector;
 
-namespace SharedCode
+namespace SharedCode.Types
 {
 	//[AdvancedInspector]
 	public class CountedSet<T>
