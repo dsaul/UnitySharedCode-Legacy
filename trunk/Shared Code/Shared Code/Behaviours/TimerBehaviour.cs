@@ -3,9 +3,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ShinobiTools
+namespace SharedCode.Behaviours.Internal
 {
-    public class ShinobiMono : MonoBehaviour
+    public class TimerBehaviour : MonoBehaviour
     {
         /// <summary>
         /// How long the object lives before dying. A lifespan of 0.0 means the object lives forever.
@@ -15,14 +15,14 @@ namespace ShinobiTools
         /// <summary>
         /// 
         /// </summary>
-        private List<STimerData> _timers;
+		private List<TimerBehabiourData> _timers;
 
         /// <summary>
         /// Creates a new instance of type ShinobiMono.
         /// </summary>
-        public ShinobiMono( )
+        public TimerBehaviour( )
         {
-            _timers = new List<STimerData>( );
+			_timers = new List<TimerBehabiourData>();
         }
 
         #region Unity Engine Callbacks
@@ -82,7 +82,7 @@ namespace ShinobiTools
             // Search for a duplicate before creating a new instance.
             for( int timerIdx = 0; timerIdx < _timers.Count; timerIdx++ )
             {
-                STimerData timer = _timers[timerIdx];
+                TimerBehabiourData timer = _timers[timerIdx];
 
                 if( timer.methodName == inMethodName )
                 {
@@ -100,7 +100,6 @@ namespace ShinobiTools
                         timer.loop            = inLoop;
                         timer.frequency       = inFrequency;
                         timer.elpasedTime     = 0.0f;
-                        timer.ignoreTimeScale = inIgnoreTimeScale;
                     }
                     timer.paused = false;
 
@@ -111,14 +110,13 @@ namespace ShinobiTools
             // If this timer is not a dupe, create a new one.
             if( !isDupe )
             {
-                STimerData newTimer      = new STimerData( );
+                TimerBehabiourData newTimer      = new TimerBehabiourData( );
                 newTimer.loop            = inLoop;
                 newTimer.action          = null;
                 newTimer.paused          = false;
                 newTimer.frequency       = inFrequency;
                 newTimer.methodName      = inMethodName;
                 newTimer.elpasedTime     = 0.0f;
-                newTimer.ignoreTimeScale = inIgnoreTimeScale;
 
                 _timers.Add( newTimer );
             }
@@ -135,14 +133,14 @@ namespace ShinobiTools
         /// <param name="inFrequency">The amount of time to pass between executions.</param>
         /// <param name="inLoop">Whether to execute once or execute repeatedly.</param>
         /// <param name="inAction">The action to invoke when this timer executes.</param>
-        public void SetTimer( float inFrequency, bool inLoop, Action inAction, bool inIgnoreTimeScale = false )
+        public void SetTimer( float inFrequency, bool inLoop, Action inAction)
         {
             bool isDupe = false;
 
             // Search for a duplicate before creating a new instance.
             for( int timerIdx = 0; timerIdx < _timers.Count; timerIdx++ )
             {
-                STimerData timer = _timers[timerIdx];
+                TimerBehabiourData timer = _timers[timerIdx];
 
                 if( timer.action == inAction )
                 {
@@ -160,7 +158,6 @@ namespace ShinobiTools
                         timer.loop            = inLoop;
                         timer.frequency       = inFrequency;
                         timer.elpasedTime     = 0.0f;
-                        timer.ignoreTimeScale = inIgnoreTimeScale;
                     }
                     timer.paused = false;
 
@@ -171,14 +168,13 @@ namespace ShinobiTools
             // If this timer is not a dupe, create a new one.
             if( !isDupe )
             {
-                STimerData newTimer      = new STimerData( );
+                TimerBehabiourData newTimer      = new TimerBehabiourData( );
                 newTimer.loop            = inLoop;
                 newTimer.action          = inAction;
                 newTimer.paused          = false;
                 newTimer.frequency       = inFrequency;
                 newTimer.methodName      = "";
                 newTimer.elpasedTime     = 0.0f;
-                newTimer.ignoreTimeScale = inIgnoreTimeScale;
 
                 _timers.Add( newTimer );
             }
@@ -193,7 +189,7 @@ namespace ShinobiTools
             {
                 if( !_timers[i].paused )
                 {
-                    _timers[i].elpasedTime += _timers[i].ignoreTimeScale ? SGameTime.Instance.GetActualDeltaTime( ) : Time.deltaTime;
+					_timers[i].elpasedTime += Time.deltaTime;
                 }
             }
 

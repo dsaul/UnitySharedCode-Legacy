@@ -3,22 +3,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using ShinobiTools;
 
-namespace SharedCode
+namespace SharedCode.Behaviours
 {
-	public abstract class OLMonoBehaviour : ShinobiMono
+	public abstract class Behaviour : SharedCode.Behaviours.Internal.TimerBehaviour
 	{
 		#region Delegates
 
-		public Action<OLMonoBehaviour> OnFinishedSpawnSetup; // OLMonoBehaviour source
+		public Action<Behaviour> OnFinishedSpawnSetup; // OLMonoBehaviour source
 
 		#endregion Delegates
 		#region Events
 
 		protected virtual void Awake()
 		{
-			OnFinishedSpawnSetup = new Action<OLMonoBehaviour>(delegate { });
+			OnFinishedSpawnSetup = new Action<Behaviour>(delegate { });
 		}
 
 		protected virtual void Start()

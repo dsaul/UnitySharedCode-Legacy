@@ -3,11 +3,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 //using AdvancedInspector;
+using SharedCode.Behaviours;
 
 namespace SharedCode
 {
 	//[AdvancedInspector]
-	public class InstanceTracked<T> : OLMonoBehaviour where T : InstanceTracked<T>
+	public class InstanceTracked<T> : SharedCode.Behaviours.Behaviour where T : InstanceTracked<T>
 	{
 		static List<T> c_Instances = null;
 		public static List<T> Instances

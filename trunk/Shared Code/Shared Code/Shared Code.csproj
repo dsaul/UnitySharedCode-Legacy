@@ -51,11 +51,10 @@
   <ItemGroup>
     <Compile Include="Additions\ArrayAdditions.cs" />
     <Compile Include="Additions\BoundsAdditions.cs" />
+    <Compile Include="Behaviours\Behaviour.cs" />
     <Compile Include="Behaviours\CameraBillboard.cs" />
-    <Compile Include="ShinobiTools\ShinobiMono\SGameTime.cs" />
-    <Compile Include="ShinobiTools\ShinobiMono\ShinobiMono.cs" />
-    <Compile Include="ShinobiTools\ShinobiMono\SMonoton.cs" />
-    <Compile Include="ShinobiTools\ShinobiMono\STimerData.cs" />
+    <Compile Include="Behaviours\TimerBehaviour.cs" />
+    <Compile Include="Behaviours\TimerBehabiourData.cs" />
     <Compile Include="Types\CardinalDirection.cs" />
     <Compile Include="Additions\ColorAdditions.cs" />
     <Compile Include="Behaviours\ContinuousRotate.cs" />
@@ -89,7 +88,6 @@
     <Compile Include="Utility\MoveUnityWindow.cs" />
     <Compile Include="Types\NamedShadesOfGrey.cs" />
     <Compile Include="Additions\ObjectAdditions.cs" />
-    <Compile Include="Behaviours\OLMonoBehaviour.cs" />
     <Compile Include="Utility\PlayerPrefsX.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomRotate.cs" />
@@ -105,9 +103,6 @@
     <Compile Include="Additions\Vector3Additions.cs" />
     <Compile Include="Additions\Vector4Additions.cs" />
     <Compile Include="VelocityLimiter.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ShinobiTools\ShinobiMono\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

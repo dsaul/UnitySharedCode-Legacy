@@ -1,13 +1,8 @@
-﻿////////////////////////////////////////////////////////////
-// STimerData.cs
-//
-// Copyright © 2013-2014 Shinobi Tools, All Rights Reserved.
-////////////////////////////////////////////////////////////
-using System;
+﻿using System;
 
-namespace ShinobiTools
+namespace SharedCode.Behaviours.Internal
 {
-    public class STimerData 
+    public class TimerBehabiourData 
     {
         /// <summary>
         /// Execute once or execute repeatedly.
@@ -18,11 +13,6 @@ namespace ShinobiTools
         /// True if the timer is paused.
         /// </summary>
         public bool paused;
-
-        /// <summary>
-        /// True if the timer ignores the global time scale.
-        /// </summary>
-        public bool ignoreTimeScale;
 
         /// <summary>
         /// Name of the method to call when the timer executes.
