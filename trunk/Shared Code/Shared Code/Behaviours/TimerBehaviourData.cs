@@ -2,7 +2,7 @@
 
 namespace SharedCode.Behaviours.Internal
 {
-    public class TimerBehabiourData 
+    public class TimerBehaviourData 
     {
         /// <summary>
         /// Execute once or execute repeatedly.

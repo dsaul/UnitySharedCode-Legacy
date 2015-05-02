@@ -15,14 +15,14 @@ namespace SharedCode.Behaviours.Internal
         /// <summary>
         /// 
         /// </summary>
-		private List<TimerBehabiourData> _timers;
+		private List<TimerBehaviourData> _timers;
 
         /// <summary>
         /// Creates a new instance of type ShinobiMono.
         /// </summary>
         public TimerBehaviour( )
         {
-			_timers = new List<TimerBehabiourData>();
+			_timers = new List<TimerBehaviourData>();
         }
 
         #region Unity Engine Callbacks
@@ -82,7 +82,7 @@ namespace SharedCode.Behaviours.Internal
             // Search for a duplicate before creating a new instance.
             for( int timerIdx = 0; timerIdx < _timers.Count; timerIdx++ )
             {
-                TimerBehabiourData timer = _timers[timerIdx];
+                TimerBehaviourData timer = _timers[timerIdx];
 
                 if( timer.methodName == inMethodName )
                 {
@@ -110,7 +110,7 @@ namespace SharedCode.Behaviours.Internal
             // If this timer is not a dupe, create a new one.
             if( !isDupe )
             {
-                TimerBehabiourData newTimer      = new TimerBehabiourData( );
+                TimerBehaviourData newTimer      = new TimerBehaviourData( );
                 newTimer.loop            = inLoop;
                 newTimer.action          = null;
                 newTimer.paused          = false;
@@ -140,7 +140,7 @@ namespace SharedCode.Behaviours.Internal
             // Search for a duplicate before creating a new instance.
             for( int timerIdx = 0; timerIdx < _timers.Count; timerIdx++ )
             {
-                TimerBehabiourData timer = _timers[timerIdx];
+                TimerBehaviourData timer = _timers[timerIdx];
 
                 if( timer.action == inAction )
                 {
@@ -168,7 +168,7 @@ namespace SharedCode.Behaviours.Internal
             // If this timer is not a dupe, create a new one.
             if( !isDupe )
             {
-                TimerBehabiourData newTimer      = new TimerBehabiourData( );
+                TimerBehaviourData newTimer      = new TimerBehaviourData( );
                 newTimer.loop            = inLoop;
                 newTimer.action          = inAction;
                 newTimer.paused          = false;

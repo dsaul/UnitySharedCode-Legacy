@@ -1,17 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
-namespace SharedCode
+namespace SharedCode.Behaviours
 {
-	namespace Behaviours
+	public class DoNotDestroyOnLoad : MonoBehaviour
 	{
-		public class DoNotDestroyOnLoad : MonoBehaviour
+		void Start()
 		{
-			void Start () {
-				DontDestroyOnLoad(gameObject);
-			}
+			DontDestroyOnLoad(gameObject);
 		}
-		
 	}
 }
 

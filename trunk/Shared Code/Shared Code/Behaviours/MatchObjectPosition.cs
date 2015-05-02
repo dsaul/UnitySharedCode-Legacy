@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace SharedCode
+namespace SharedCode.Behaviours
 {
 	public class MatchObjectPosition : MonoBehaviour
 	{

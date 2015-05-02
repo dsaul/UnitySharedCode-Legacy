@@ -35,7 +35,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEditor">
@@ -54,7 +53,7 @@
     <Compile Include="Behaviours\Behaviour.cs" />
     <Compile Include="Behaviours\CameraBillboard.cs" />
     <Compile Include="Behaviours\TimerBehaviour.cs" />
-    <Compile Include="Behaviours\TimerBehabiourData.cs" />
+    <Compile Include="Behaviours\TimerBehaviourData.cs" />
     <Compile Include="Types\CardinalDirection.cs" />
     <Compile Include="Additions\ColorAdditions.cs" />
     <Compile Include="Behaviours\ContinuousRotate.cs" />

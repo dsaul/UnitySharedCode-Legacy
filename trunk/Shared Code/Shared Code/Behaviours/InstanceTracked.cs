@@ -2,10 +2,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using AdvancedInspector;
-using SharedCode.Behaviours;
 
-namespace SharedCode
+namespace SharedCode.Behaviours
 {
 	//[AdvancedInspector]
 	public class InstanceTracked<T> : SharedCode.Behaviours.Behaviour where T : InstanceTracked<T>

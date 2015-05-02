@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace SharedCode
+namespace SharedCode.Behaviours
 {
 	public class LookAtObject : MonoBehaviour
 	{
@@ -9,7 +9,8 @@ namespace SharedCode
 		
 		void Update()
 		{
-			if (target != null) transform.LookAt(target.transform);
+			if (target != null)
+				transform.LookAt(target.transform);
 		}
 	}
 }
