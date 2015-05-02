@@ -6,18 +6,18 @@ using System.Linq;
 
 namespace SharedCode.Behaviours
 {
-	public abstract class Behaviour : SharedCode.Behaviours.Internal.TimerBehaviour
+	public abstract class Base : SharedCode.Behaviours.Internal.TimerBehaviour
 	{
 		#region Delegates
 
-		public Action<Behaviour> OnFinishedSpawnSetup; // OLMonoBehaviour source
+		public Action<Base> OnFinishedSpawnSetup; // OLMonoBehaviour source
 
 		#endregion Delegates
 		#region Events
 
 		protected virtual void Awake()
 		{
-			OnFinishedSpawnSetup = new Action<Behaviour>(delegate { });
+			OnFinishedSpawnSetup = new Action<Base>(delegate { });
 		}
 
 		protected virtual void Start()
