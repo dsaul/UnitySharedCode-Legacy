@@ -30,7 +30,7 @@ namespace SharedCode.Behaviours
 		{
 			OnFinishedSpawnSetup = new Action<Base>(delegate { });
 			m_SignalsSubscribed = new Queue<SignalSkeleton>();
-			m_SignalsNonSubscribed = new Queue<SignalSkeleton>();
+			m_SignalsNonSubscribed = new Queue<SignalSkeleton>(DefaultSignals);
 			m_SignalsFailed = new Queue<SignalSkeleton>();
 		}
 
