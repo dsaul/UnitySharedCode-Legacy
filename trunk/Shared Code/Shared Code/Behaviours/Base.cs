@@ -23,6 +23,8 @@ namespace SharedCode.Behaviours
 		Queue<SignalSkeleton> m_SignalsNonSubscribed;
 		Queue<SignalSkeleton> m_SignalsFailed;
 
+		protected Queue<Action> ExecuteOnMainThread { get; set; }
+
 		#endregion Delegates & Types
 		#region Events
 
@@ -32,7 +34,9 @@ namespace SharedCode.Behaviours
 			m_SignalsSubscribed = new Queue<SignalSkeleton>();
 			m_SignalsNonSubscribed = new Queue<SignalSkeleton>(DefaultSignals);
 			m_SignalsFailed = new Queue<SignalSkeleton>();
-		}
+			ExecuteOnMainThread = new Queue<Action>();
+
+        }
 
 		protected virtual void Start()
 		{
@@ -47,6 +51,11 @@ namespace SharedCode.Behaviours
 		protected override void Update()
 		{
 			base.Update();
+
+			while (ExecuteOnMainThread.Count > 0)
+			{
+				ExecuteOnMainThread.Dequeue().Invoke();
+			}
 		}
 
 		protected virtual void OnEnable()
@@ -73,6 +82,8 @@ namespace SharedCode.Behaviours
 		{
 			get;
 		}
+
+		
 
 		void OnSubscribeToSignals()
 		{
