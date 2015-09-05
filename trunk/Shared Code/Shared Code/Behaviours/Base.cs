@@ -69,7 +69,7 @@ namespace SharedCode.Behaviours
 		#endregion Events
 		#region Signals
 
-		public abstract List<SignalSkeleton> DefaultSignals
+		protected abstract List<SignalSkeleton> DefaultSignals
 		{
 			get;
 		}
