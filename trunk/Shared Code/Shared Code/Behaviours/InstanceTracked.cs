@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace SharedCode.Behaviours
 {
 	//[AdvancedInspector]
-	public class InstanceTracked<T> : SharedCode.Behaviours.Base where T : InstanceTracked<T>
+	public abstract class InstanceTracked<T> : SharedCode.Behaviours.Base where T : InstanceTracked<T>
 	{
 		static List<T> c_Instances = null;
 		public static List<T> Instances
