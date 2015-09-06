@@ -51,6 +51,7 @@
     <Compile Include="Additions\ActionDelegateExtension.cs" />
     <Compile Include="Additions\ArrayAdditions.cs" />
     <Compile Include="Additions\BoundsAdditions.cs" />
+    <Compile Include="Additions\Texture2DAdditions.cs" />
     <Compile Include="Behaviours\Base.cs" />
     <Compile Include="Behaviours\CameraBillboard.cs" />
     <Compile Include="Behaviours\TimerBehaviour.cs" />

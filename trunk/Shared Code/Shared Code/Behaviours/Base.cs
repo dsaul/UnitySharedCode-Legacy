@@ -87,7 +87,7 @@ namespace SharedCode.Behaviours
 
 		void OnSubscribeToSignals()
 		{
-			while (m_SignalsNonSubscribed.Count > 0)
+			while (null != m_SignalsNonSubscribed && m_SignalsNonSubscribed.Count > 0)
 			{
 				SignalSkeleton skel = m_SignalsNonSubscribed.Dequeue();
 
@@ -105,7 +105,7 @@ namespace SharedCode.Behaviours
 
 		void OnUnsubscribeToSignals()
 		{
-			while (m_SignalsSubscribed.Count > 1)
+			while (null != m_SignalsNonSubscribed && m_SignalsSubscribed.Count > 1)
 			{
 				SignalSkeleton skel = m_SignalsSubscribed.Dequeue();
 
